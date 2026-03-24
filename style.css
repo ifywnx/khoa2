@@ -1,4 +1,4 @@
-/* RESET nhẹ */
+/* RESET */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -34,9 +34,15 @@ body {
   text-decoration: none;
 }
 
-/* HOVER */
 .nav a:hover {
   color: yellow;
+}
+
+/* HOME FLEX */
+.home {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 /* MAIN */
@@ -44,7 +50,7 @@ main {
   padding: 20px;
 }
 
-/* IMAGE (BOX MODEL) */
+/* IMAGE BOX MODEL */
 img {
   width: 100%;
   max-width: 300px;
@@ -53,7 +59,7 @@ img {
   border-radius: 10px;
 }
 
-/* HOVER IMAGE */
+/* HOVER */
 img:hover {
   transform: scale(1.1);
   transition: 0.3s;
