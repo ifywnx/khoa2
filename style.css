@@ -1,27 +1,72 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <title>Giới thiệu</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* RESET nhẹ */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-<a href="#main" class="skip-link">Chuyển đến nội dung chính</a>
+/* SKIP LINK */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
 
-<nav>
-  <ul class="nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-  </ul>
-</nav>
+.skip-link:focus {
+  top: 0;
+}
 
-<main id="main">
-  <h1>Giới thiệu</h1>
-  <p>Tôi đang học lập trình web.</p>
-  <img src="images/img2.jpg" alt="ảnh about">
-</main>
+/* NAV FLEX */
+.nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  background: #333;
+  padding: 10px;
+  margin: 0;
+}
 
-</body>
-</html>
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HOVER */
+.nav a:hover {
+  color: yellow;
+}
+
+/* MAIN */
+main {
+  padding: 20px;
+}
+
+/* IMAGE (BOX MODEL) */
+img {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* HOVER IMAGE */
+img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* GRID */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* NTH-CHILD */
+.gallery img:nth-child(even) {
+  border-radius: 50%;
+}
